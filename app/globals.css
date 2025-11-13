@@ -1,0 +1,25 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; padding: 0; }
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: #0b141a; color: #e9edef; }
+.container { max-width: 720px; margin: 0 auto; padding: 24px; }
+.card { background: #111b21; border: 1px solid #202c33; border-radius: 12px; padding: 20px; box-shadow: 0 4px 24px rgba(0,0,0,0.2); }
+.h1 { font-size: 24px; margin: 0 0 12px; }
+.p { color: #8696a0; margin: 0 0 16px; }
+.row { display: flex; gap: 12px; align-items: stretch; }
+.input { flex: 1; background: #0b141a; border: 1px solid #2a3942; color: #e9edef; border-radius: 10px; padding: 12px 14px; outline: none; }
+.input:focus { border-color: #00a884; box-shadow: 0 0 0 3px rgba(0,168,132,0.15); }
+.textarea { width: 100%; min-height: 120px; resize: vertical; }
+.button { background: #00a884; color: #073d2c; font-weight: 600; border: none; border-radius: 10px; padding: 12px 16px; cursor: pointer; }
+.button:disabled { opacity: 0.6; cursor: not-allowed; }
+.secondary { background: #202c33; color: #e9edef; }
+.badge { display: inline-block; padding: 4px 10px; border-radius: 999px; background: #0b141a; border: 1px solid #2a3942; color: #8696a0; font-size: 12px; }
+.stack { display: grid; gap: 12px; }
+.footer { color: #6a7b84; text-align: center; font-size: 12px; margin-top: 20px; }
+.list { background: #0b141a; border: 1px solid #2a3942; border-radius: 12px; overflow: hidden; }
+.listItem { display: flex; justify-content: space-between; align-items: center; padding: 10px 12px; border-bottom: 1px solid #1f2c33; }
+.listItem:last-child { border-bottom: none; }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+.suggestion { padding: 6px 8px; border-radius: 8px; cursor: pointer; }
+.suggestion:hover { background: #1f2c33; }
+.modalScrim { position: fixed; inset: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; }
+.modal { width: min(680px, 96vw); background: #111b21; border: 1px solid #202c33; border-radius: 12px; padding: 16px; }
